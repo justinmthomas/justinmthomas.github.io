@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>BootStrap Visualization Weather Stats</title>
+
+  <!-- reset css -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="nav-link" href="index.html"> 
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+            </button>
+        </a>
+        <ul class="navbar-nav">
+            <!-- Home button -->
+            <li class="nav-item active">
+                <a class="nav-link bg-info" href="index.html">  
+                    Latitude</a>
+            </li>
+        </ul>
+
+        <!-- right side of navbar -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown ml-auto">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" href="#" role="button" 
+                aria-haspopup="true" aria-expanded="false">Plot</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="MaxTemp_pg.html">Max Temperature</a>
+                    <a class="dropdown-item" href="Humidity_pg.html">Humidity</a>
+                    <a class="dropdown-item" href="Cloudiness_pg.html">Cloudiness</a>
+                    <a class="dropdown-item" href="WindSpeed_pg.html">Wind Speed </a>
+                </div>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="Comparisons_pg.html">Comparison
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Data_pg.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+
+  
+      <div style="background-color:gray;">
+        <div class="row">
+            <div class="col-md-12">
+                </br>
+                </br>
+            </div>
+        </div>
+      </div> 
+    
+
+        <!-- main content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" style="margin-top: 20px">
+                    <div class="container bg-white p-4">
+                        <h2>
+                            <h2 class="text-info font-weight-bold" style="font-family: Georgia">
+
+                            Summary: Latitude vs. X
+    
+                        </h2>
+                            <hr>
+                        <div class="container">
+
+                                    
+                            <img class="float-left mr-3" width="200px" img src="images\Latitude_v_Temperature.png"  alt="Latitude Temperature" width="304" height="236">
+                            <div class="container">
+
+                                    <p style="line-height: 22pt">
+    
+                                    The purpose of this project was to analyze trends in weather data based on latitude and to show an understanding of HTML, CSS, and the Bootstrap CSS tool. 
+    
+                                    </p>                                
+    
+                                    <p style="line-height: 22pt">     
+    
+                                    After assembling the dataset, a Pandas dataframe was created and a series of graphs were generated using Matplotlib that display Max Temperature, Humidity, Cloudiness, or Windspeed on the Y-Axis and Longitude on the X-Axis. The source data for the graphs is provided in this site along with detailed explanations of each graph.                        
+    
+                                    </p>
+    
+                </div>
+
+            </div>
+            
+            <div class="container">
+                <p style="line-height: 16pt">
+                <p> &emsp;  
+                </br>
+                
+                </br>
+
+                This site contains these individual graphs along with descriptions,
+                a comparisons page, and a data page with a responsive table containing the data used in the visualizations. 
+                </p>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="col-lg-4" style="margin-top: 20px; margin-bottom: 226px">
+
+            <div class="container bg-white py-3 pr-3">
+                <h4 class="text-info font-weight-bold" style="font-family: Georgia">
+
+                    Visualizations
+
+                </h4>
+
+                <hr>
+
+                <div class="container bg-white my-4">  
+
+                    <a href="./html/temperature.html">
+
+                        <img class="float-left my-1 mr-2" src="images/Latitude_v_Temperature.png" alt="Latitude vs. Temperature Graph" style="width: 136px">
+
+                    </a>
+
+                    <a href="html/humidity.html">
+
+                        <img class="my-1 mr-2" src="images/latitude_v_humidity.png" alt="Latitude vs. Humidity Graph" style="width: 136px">
+
+                    </a>
+
+                    <a href="./html/cloudiness.html">
+
+                        <img class="float-left my-1 mr-2" src="images/latitude_v_cloudiness.png" alt="Latitude vs. Cloudiness Graph" style="width: 136px">
+
+                    </a>
+
+                    <a href="./html/wind.html">
+
+                        <img class="my-1 mr-2" src="images/latitude_v_wind_speed.png" alt="Latitude vs. Wind Speed Graph" style="width: 136px">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</div>
+       
+</body>
+</html>
+© 2019 GitHub, Inc.
